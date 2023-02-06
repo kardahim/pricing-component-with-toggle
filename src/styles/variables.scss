@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 // colors
-$c0: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+$accent-color: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 $background-color: hsl(240, 78%, 98%);
-$c2: hsl(234, 14%, 74%);
-$c3: hsl(233, 13%, 49%);
-$c4: hsl(232, 13%, 33%);
+$toggle-color: hsl(234, 14%, 74%);
+$basic-color: hsl(233, 13%, 49%);
+$price-color: hsl(232, 13%, 33%);
 
 // fonts
 $font-family: 'Montserrat', sans-serif;

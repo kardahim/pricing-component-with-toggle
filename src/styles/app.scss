@@ -19,7 +19,6 @@
     font-weight: $font-weight;
 
     position: relative;
-
     background: $background-color;
 
     .app__image {
@@ -34,18 +33,28 @@
     .app__image--bottom {
         bottom: 0px;
         left: 0px;
-        // z-index: -1;
     }
 
-    .app__header {}
+    .app__header {
+        color: $basic-color;
+    }
 
     .app__toggle {
         margin: 30px 0;
-
         display: flex;
+        align-items: center;
+
+        span {
+            color: $toggle-color;
+        }
     }
 
-    .app__cards {}
+    .app__cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
 
     .app__footer {}
 

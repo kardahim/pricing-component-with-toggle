@@ -5,8 +5,8 @@
 
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 50px;
+    height: 30px;
 
     .toggle__input {
         opacity: 0;
@@ -21,7 +21,7 @@
         right: 0;
         bottom: 0;
 
-        background-color: #ccc;
+        background: $accent-color;
         -webkit-transition: .4s;
         transition: .4s;
 
@@ -31,8 +31,8 @@
 
     .toggle__style:before {
         position: absolute;
-        height: 26px;
-        width: 26px;
+        height: 22px;
+        width: 22px;
         left: 4px;
         bottom: 4px;
 
@@ -43,17 +43,10 @@
         content: "";
     }
 
-    .toggle__input:checked+.toggle__style {
-        background-color: #2196F3;
-    }
-
-    .toggle__input:focus+.toggle__style {
-        box-shadow: 0 0 1px #2196F3;
-    }
-
+    // move when checked
     .toggle__input:checked+.toggle__style:before {
-        -webkit-transform: translateX(26px);
-        -ms-transform: translateX(26px);
-        transform: translateX(26px);
+        -webkit-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+        transform: translateX(20px);
     }
 }
