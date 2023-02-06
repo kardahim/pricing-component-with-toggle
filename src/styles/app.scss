@@ -34,12 +34,16 @@
     .app__image--bottom {
         bottom: 0px;
         left: 0px;
-        z-index: -1;
+        // z-index: -1;
     }
 
     .app__header {}
 
-    .app__toggle {}
+    .app__toggle {
+        margin: 30px 0;
+
+        display: flex;
+    }
 
     .app__cards {}
 
