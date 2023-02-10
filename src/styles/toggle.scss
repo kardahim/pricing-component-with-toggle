@@ -49,4 +49,8 @@
         -ms-transform: translateX(20px);
         transform: translateX(20px);
     }
+
+    &:hover {
+        opacity: 0.6;
+    }
 }

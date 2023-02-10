@@ -1,0 +1,100 @@
+@import './variables.scss';
+
+.card {
+    width: 350px;
+    height: 456px;
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+
+    .card__header {
+        text-align: center;
+
+        .card__header__title {
+            color: $basic-color;
+        }
+
+        .card__header__amount {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin: 20px 0px;
+            font-size: 4rem;
+            color: $price-color;
+
+            span:nth-child(1) {
+                font-size: 2.35rem;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .card__body {
+        color: $basic-color;
+
+        .card__body__divider {
+            height: 1px;
+            background: $toggle-color;
+        }
+
+        .card__body__offer {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .card__body__button {
+            text-transform: uppercase;
+            height: 45px;
+            width: 100%;
+            margin-top: 30px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            color: white;
+            background: $accent-color;
+            font-weight: bold;
+
+            &:hover {
+                cursor: pointer;
+                background: none;
+                color: $accent-color-btn;
+                border: 1px solid $accent-color-btn;
+            }
+        }
+    }
+}
+
+.card--special {
+    background: $accent-color;
+    height: 500px;
+    padding: calc(30px + 23px) 30px;
+
+    .card__header {
+        .card__header__title {
+            color: white;
+        }
+
+        .card__header__amount {
+            color: white;
+        }
+    }
+
+    .card__body {
+        .card__body__offer {
+            color: white;
+        }
+
+        .card__body__button {
+            color: $accent-color-btn;
+            background: white;
+
+            &:hover {
+                cursor: pointer;
+                background: none;
+                color: white;
+                border: 1px solid white;
+            }
+        }
+    }
+}
