@@ -10,6 +10,8 @@ import Toggle from './components/Toggle';
 import Card from './components/Card';
 
 function App() {
+  const [isMonthly, setIsMonthly] = React.useState<boolean>(false)
+
   return (
     <main className="app">
       <img
@@ -25,25 +27,25 @@ function App() {
       <h1 className="app__header">Our Pricing</h1>
       <div className="app__toggle">
         <span>Annualy</span>
-        <Toggle />
+        <Toggle setActive={setIsMonthly} />
         <span>Monthly</span>
       </div>
       <div className="app__cards">
         <Card name='card'
           header='Basic'
-          amount={199.99}
+          amount={isMonthly ? 19.99 : 199.99}
           storageSize='500 GB'
           users={2}
           sendUp={3} />
         <Card name='card card--special'
           header='Professional'
-          amount={249.99}
+          amount={isMonthly ? 24.99 : 249.99}
           storageSize='1 TB'
           users={5}
           sendUp={10} />
         <Card name='card'
           header='Master'
-          amount={399.99}
+          amount={isMonthly ? 39.99 : 399.99}
           storageSize='2 TB'
           users={10}
           sendUp={20} />
