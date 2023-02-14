@@ -50,7 +50,10 @@ function App() {
           users={10}
           sendUp={20} />
       </div>
-      <footer className="app__footer"></footer>
+      <footer className="app__footer">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/kardahim#">Paweł Ciszewski</a>.
+      </footer>
     </main>
   );
 }
