@@ -1,4 +1,5 @@
 @import './variables.scss';
+@import './mixins.scss';
 
 .card {
     width: 350px;
@@ -69,6 +70,10 @@
     background: $accent-color;
     height: 500px;
     padding: calc(30px + 23px) 30px;
+
+    @include mobile {
+        margin: 50px 0;
+    }
 
     .card__header {
         .card__header__title {
