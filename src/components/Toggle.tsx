@@ -4,8 +4,8 @@ import '../styles/toggle.scss'
 
 function Toggle(props: IToggle) {
     return (
-        <label className='toggle'>
-            <input type='checkbox' className="toggle__input" onChange={e => props.setActive(e.target.checked)} />
+        <label className='toggle' htmlFor='toggle'>
+            <input id='toggle' type='checkbox' className="toggle__input" onChange={e => props.setActive(e.target.checked)} />
             <span className="toggle__style"></span>
         </label>
     )
